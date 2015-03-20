@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>Zachary Warren Assignment 5</title>
+    <link rel="stylesheet" type="text/css" href="styles/Assignment5.css" />
+    <script src="js/Assignment5.js"></script> 
+</head>
+
+
+<body>
+    <h1>Zachary Warren Assignment 5</h1>
+    <hr>
+        
+        <select onchange="Menu()" id="dropdown">
+            <option>Please select an option</option>
+                <option>Show Section 1</option>
+                <option>Show Section 2</option>
+                <option>Show Section 3</option>
+             </select>
+               <br>
+        </select>
+        
+        <section id="section1">
+            <h3>Customer List</h3>
+
+            <button onclick="GetList()" id="custlist">Get Customer List</button>
+                <hr>
+                    <label id="customerlistlabel">Customer List will be displayed here</label>
+            <hr>
+        </section>
+        
+        <section id="section2">
+            <h3>Order History</h3>
+                    
+                    <label>Please enter a Customer ID:</label> 
+                    <input type="text" id="custidhistory">
+                        <br><br>
+                        <button onclick="GetOrderHistory()" id="custorderhistory">Get Order History</button>
+                        <hr>
+                            <label id="orderhistorylabel">Order history will be displayed here</label>
+                            <hr>
+        </section>
+                 
+                 
+                 <section id="section3">
+                     <h3>Customer Orders</h3>
+
+            <label>Please enter a Customer ID:</label>
+            <input type="text" id="custid">
+                <br><br>
+                <button onclick="GetOrders()" id="custorders">Get Customer Orders</button>
+                <hr>
+                    <label id="orderslabel">Customer orders will be displayed here</label>
+            <hr>
+                    
+                   
+                 </section>
+    
+
+
+
+</body>
+</html>
